@@ -5,12 +5,6 @@ import {
   Heading,
   Subtitle,
   X,
-  Article,
-  ExperienceContainer,
-  ExperienceTitle,
-  DetailBlock,
-  DetailPoint,
-  Image,
   WorkLink,
   TextLink,
   HomeLink,
@@ -20,10 +14,6 @@ import {
   ImageBackground,
   Overlay,
   Container,
-  RoleTime,
-  Role,
-  Time,
-  Client
 } from "../styles/About.styles";
 
 const About = ({ history }) => {

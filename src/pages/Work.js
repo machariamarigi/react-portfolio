@@ -13,7 +13,6 @@ import {
   Button,
   SlickSwitch,
   Section,
-  Spanner,
   Subtitle,
   HomeLink,
   TextLink
@@ -25,8 +24,7 @@ const Work = ({ history }) => {
   const [carouselSet, setCarousel] = useState(false);
   const [currentSlide, setSlide] = useState(1);
   const [animateHome, setAnimeHome] = useState(false);
-  const [toCase, setCase] = useState("");
-  const [coord, setCoords] = useState();
+  const [toCase] = useState("");
   const carousel = useRef(null);
 
   useEffect(() => {
@@ -67,9 +65,6 @@ const Work = ({ history }) => {
   const CaseTwo = require("../assets/cases/prodperfect.jpg");
   const CaseThree = require("../assets/cases/sondermind.jpg");
   const CaseFour = require("../assets/cases/wundercar.jpg");
-
-  const handleCaseSwap = (e, uri) =>
-    e.x < coord + 15 && e.x > coord - 15 && setCase(uri);
 
   return (
     <>
